@@ -14,10 +14,6 @@ const origin = (typeof window === 'undefined') ? '' : window.location.origin;
 
 //en el metatag de la imagen necesito la ruta especifica y del lado del servidor
 export const Layout: FC<Props> = ({children, title}) => {
-
-  
-
-
   return (
       <>
         <Head>
@@ -30,7 +26,6 @@ export const Layout: FC<Props> = ({children, title}) => {
 <meta property="og:image" content={`${origin}/img/banner.png`}  /> 
         </Head>
       
-        {/*<Navbar />*/}
         <Navbar></Navbar>
 
         <main style={{
